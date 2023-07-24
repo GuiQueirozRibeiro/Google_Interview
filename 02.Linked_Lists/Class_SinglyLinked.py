@@ -3,17 +3,21 @@ class Node:
         self.value = value
         self.next = next
 
+    # Time complexity: O(1)
     def updateValue(self, value):
         self.value = value
 
+    # Time complexity: O(1)
     def updateNext(self, next):
         self.next = next
+
 
 class SinglyLinked:
     def __init__(self):
         self.startNode = Node(None, None)
         self.size = 0
 
+    # Time complexity: O(n)
     def add(self, index, value):
         if (index < 0 or index > self.size):
             return "ERROR: invalid index"
@@ -33,9 +37,10 @@ class SinglyLinked:
 
             newNode = Node(value, current.next)
             current.next = newNode
-            
+
         self.size += 1
 
+    # Time complexity: O(n)
     def remove(self, index):
         if (index < 0 or index > self.size):
             return "ERROR: invalid index"
@@ -50,9 +55,10 @@ class SinglyLinked:
                 current = current.next
 
             current.next = current.next.next
-        
+
         self.size -= 1
 
+    # Time complexity: O(n)
     def search(self, index):
         if (index < 0 or index > self.size-1):
             return "ERROR: invalid index"
@@ -63,25 +69,28 @@ class SinglyLinked:
             current = current.next
 
         return current
-    
+
+    # Time complexity: O(n*m)
     def addList(self, index: int, list):
         for i, el in enumerate(list):
             self.add(index+i, el)
 
+    # Time complexity: O(n)
     def __str__(self):
         string = [0 for _ in range(self.size)]
-        
+
         current = self.startNode
         for i in range(self.size):
             string[i] = str(current.value)
             current = current.next
-            
+
         return ''.join(string)
-    
+
+    # Time complexity: O(n)
     def addNode(self, index: int, node: Node):
         if (index < 0 or index > self.size):
             return "[ERROR]: invalid index"
-        
+
         if self.startNode.value == None or index == 0:
             self.startNode = node
             current = self.startNode
@@ -90,13 +99,13 @@ class SinglyLinked:
                 size += 1
                 current = current.next
             self.size = size
-        
+
         else:
             current = self.startNode
 
             for _ in range(index-1):
                 current = current.next
-            
+
             prevCurrentNext = current.next
             current.next = node
             current = node
@@ -104,6 +113,6 @@ class SinglyLinked:
             while current.next:
                 size += 1
                 current = current.next
-        
+
             current.next = prevCurrentNext
             self.size += size

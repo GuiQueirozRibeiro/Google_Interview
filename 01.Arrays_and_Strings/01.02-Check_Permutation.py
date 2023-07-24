@@ -1,6 +1,6 @@
 '''
 01.02 Check Permutation: Given two strings, write a method to decide if one is a permutation of the
-      other.
+    other.
 '''
 
 #Time: O(n) Space: O(n)
