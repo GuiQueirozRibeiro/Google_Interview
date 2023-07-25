@@ -8,7 +8,7 @@ sys.path.insert(0, "/projetos/flask-test")
 
 from Class_SinglyLinked import SinglyLinked
 
-#Time: O(n) Space: O(n)
+# Time: O(n) Space: O(n)
 def Ptr1(ptr1, ptr2):
     i = 0
     while ptr2.next != None:

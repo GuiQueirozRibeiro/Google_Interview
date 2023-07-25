@@ -25,22 +25,22 @@ class Stack:
         self.top = None
         self.bottom = None
 
-    # Time complexity: O(1)
+    # Time: O(1) Space: O(1)
     def is_full(self):
         return self.size == self.capacity
 
-    # Time complexity: O(1)
+    # Time: O(1) Space: O(1)
     def is_empty(self):
         return self.size == 0
 
-    # Time complexity: O(1)
+    # Time: O(1) Space: O(1)
     def join(self, above, below):
         if below:
             below.above = above
         if above:
             above.below = below
 
-    # Time complexity: O(1)
+    # Time: O(1) Space: O(1)
     def push(self, v):
         if self.size >= self.capacity:
             return False
@@ -52,7 +52,7 @@ class Stack:
         self.top = n
         return True
 
-    # Time complexity: O(1)
+    # Time: O(1) Space: O(1)
     def pop(self):
         if not self.top:
             return None
@@ -61,7 +61,7 @@ class Stack:
         self.size -= 1
         return t.value
 
-    # Time complexity: O(1)
+    # Time: O(1) Space: O(1)
     def remove_bottom(self):
         b = self.bottom
         self.bottom = self.bottom.above
@@ -76,18 +76,18 @@ class SetOfStacks:
         self.capacity = capacity
         self.stacks = []
 
-    # Time complexity: O(1)
+    # Time: O(1) Space: O(1)
     def get_last_stack(self):
         if not self.stacks:
             return None
         return self.stacks[-1]
 
-    # Time complexity: O(1)
+    # Time: O(1) Space: O(1)
     def is_empty(self):
         last = self.get_last_stack()
         return not last or last.is_empty()
 
-    # Time complexity: O(1)
+    # Time: O(1) Space: O(1)
     def push(self, v):
         last = self.get_last_stack()
         if last and not last.is_full():
@@ -97,7 +97,7 @@ class SetOfStacks:
             stack.push(v)
             self.stacks.append(stack)
 
-    # Time complexity: O(1)
+    # Time: O(1) Space: O(1)
     def pop(self):
         last = self.get_last_stack()
         if not last:
@@ -107,11 +107,11 @@ class SetOfStacks:
             del self.stacks[-1]
         return v
 
-    # Time complexity: O(n)
+    # Time: O(n) Space: O(n)
     def pop_at(self, index):
         return self.left_shift(index, True)
 
-    # Time complexity: O(n)
+    # Time: O(n) Space: O(n)
     def left_shift(self, index, remove_top):
         stack = self.stacks[index]
         removed_item = stack.pop() if remove_top else stack.remove_bottom()

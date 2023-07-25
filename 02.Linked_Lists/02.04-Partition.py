@@ -16,7 +16,7 @@ sys.path.insert(0, "/projetos/flask-test")
 
 from Class_SinglyLinked import SinglyLinked
 
-#Time: O(n) Space: O(1)
+# Time: O(n) Space: O(1)
 def partition(linklist, x):
     ptr1 = ptr2 = list.startNode
     runner = 0  

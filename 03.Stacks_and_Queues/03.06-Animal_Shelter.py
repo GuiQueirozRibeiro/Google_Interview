@@ -19,7 +19,7 @@ class SinglyLinked:
         self.startNode = Node(None, None)
         self.size = 0
 
-    # Time complexity: O(n)
+    # Time: O(n) Space: O(1)
     def add(self, index, value):
         if (index < 0 or index > self.size):
             return "ERROR: invalid index"
@@ -41,7 +41,7 @@ class SinglyLinked:
 
         self.size += 1
 
-    # Time complexity: O(1)
+    # Time: O(1) Space: O(1)
     def pop_head(self):
         if self.size == 0:
             return None
@@ -63,16 +63,16 @@ class Dog(Animal):
     pass
 
 class AnimalShelter(SinglyLinked):
-    # Time complexity: O(n)
+    # Time: O(n) Space: O(1)
     def enqueue(self, animal):
         animal_node = Node(animal, None)
         self.add(self.size, animal_node)
 
-    # Time complexity: O(1)
+    # Time: O(1) Space: O(1)
     def dequeue_any(self):
         return self.pop_head()
 
-    # Time complexity: O(n)
+    # Time: O(n) Space: O(1)
     def dequeue_cat(self):
         current_node = self.startNode
         prev_node = None
@@ -88,7 +88,7 @@ class AnimalShelter(SinglyLinked):
             current_node = current_node.next
         return None
 
-    # Time complexity: O(n)
+    # Time: O(n) Space: O(1)
     def dequeue_dog(self):
         current_node = self.startNode
         prev_node = None

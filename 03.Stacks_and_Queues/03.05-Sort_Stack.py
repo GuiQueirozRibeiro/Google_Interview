@@ -11,7 +11,7 @@ class SortedStack(Stack):
         super().__init__()
         self.temp_stack = Stack()
 
-    # Time complexity: O(n)
+    # Time: O(n) Space: O(n)
     def push(self, item):
         if self.is_empty() or item < self.peek():
             super().push(item)

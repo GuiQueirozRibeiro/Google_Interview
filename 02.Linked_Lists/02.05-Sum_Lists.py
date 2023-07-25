@@ -25,7 +25,7 @@ sys.path.insert(0, "/projetos/flask-test")
 from Class_SinglyLinked import SinglyLinked
 ListA = SinglyLinked()
 
-#iterative - Time: O(A+B) Space: O(1)
+# Iterative - Time: O(A+B) Space: O(1)
 def sumList(ListA: SinglyLinked, ListB: SinglyLinked):
     ptr1 = ListA.startNode
     ptr2 = ListB.startNode
@@ -59,7 +59,7 @@ def sumList(ListA: SinglyLinked, ListB: SinglyLinked):
         return ListA
     return ListB
 
-#recursive - Time: O(max(A+B)) Space: O(1)
+# Recursive - Time: O(max(A+B)) Space: O(1)
 def Size(ListA: SinglyLinked, ListB: SinglyLinked):
     x = abs(ListA.size - ListB.size)
     size = ListA.size 

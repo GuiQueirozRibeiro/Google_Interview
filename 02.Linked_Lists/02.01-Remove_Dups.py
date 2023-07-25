@@ -12,7 +12,7 @@ sys.path.insert(0, "/projetos/flask-test")
 
 from Class_SinglyLinked import SinglyLinked
 
-#Time: O(logn) Space: O(1)
+# Time: O(logn) Space: O(1)
 def removeDups(linkedlist):
         ptr1 = ptr2 = list.startNode
         i = 0

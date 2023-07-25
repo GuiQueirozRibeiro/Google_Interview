@@ -3,7 +3,7 @@
     column are set to O.
 '''
 
-#Time: O(MxN) Space: O(1)
+# Time: O(MxN) Space: O(1)
 
 def zeroMatrix(matrix):
     M = len(matrix)

@@ -10,19 +10,19 @@ class MinStack(Stack):
         super().__init__()
         self.minvals = Stack()
 
-    # Time complexity: O(1)
+    # Time: O(1) Space: O(1)
     def push(self, value):
         super().push(value)
         if not self.minvals or value <= self.minimum():
             self.minvals.push(value)
 
-    # Time complexity: O(1)
+    # Time: O(1) Space: O(1)
     def pop(self):
         value = super().pop()
         if value == self.minimum():
             self.minvals.pop()
         return value
   
-    # Time complexity: O(1)
+    # Time: O(1) Space: O(1)
     def minimum(self):
         return self.minvals.peek()

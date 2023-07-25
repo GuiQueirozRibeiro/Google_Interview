@@ -3,7 +3,7 @@
     other.
 '''
 
-#Time: O(n) Space: O(n)
+# Time: O(n) Space: O(n)
 
 def is_permutation(a, b):
     if len(a) != len(b):

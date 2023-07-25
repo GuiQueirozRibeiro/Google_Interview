@@ -10,7 +10,7 @@
     Output: "Mr%20John%20Smith"
 '''
 
-#Time: O(n) Space: O(1)
+# Time: O(n) Space: O(1)
 
 def urlify(string, length):
     list_str = list(string)

@@ -3,11 +3,9 @@ class Node:
         self.value = value
         self.next = next
 
-    # Time complexity: O(1)
     def updateValue(self, value):
         self.value = value
 
-    # Time complexity: O(1)
     def updateNext(self, next):
         self.next = next
 
@@ -17,7 +15,7 @@ class SinglyLinked:
         self.startNode = Node(None, None)
         self.size = 0
 
-    # Time complexity: O(n)
+    # Time: O(n) Space: O(1)
     def add(self, index, value):
         if (index < 0 or index > self.size):
             return "ERROR: invalid index"
@@ -40,7 +38,7 @@ class SinglyLinked:
 
         self.size += 1
 
-    # Time complexity: O(n)
+    # Time: O(n) Space: O(1)
     def remove(self, index):
         if (index < 0 or index > self.size):
             return "ERROR: invalid index"
@@ -58,7 +56,7 @@ class SinglyLinked:
 
         self.size -= 1
 
-    # Time complexity: O(n)
+    # Time: O(n) Space: O(1)
     def search(self, index):
         if (index < 0 or index > self.size-1):
             return "ERROR: invalid index"
@@ -70,12 +68,12 @@ class SinglyLinked:
 
         return current
 
-    # Time complexity: O(n*m)
+    # Time: O(n*m) Space: O(1)
     def addList(self, index: int, list):
         for i, el in enumerate(list):
             self.add(index+i, el)
 
-    # Time complexity: O(n)
+    # Time: O(n) Space: O(n)
     def __str__(self):
         string = [0 for _ in range(self.size)]
 
@@ -86,7 +84,7 @@ class SinglyLinked:
 
         return ''.join(string)
 
-    # Time complexity: O(n)
+    # Time: O(n) Space: O(1)
     def addNode(self, index: int, node: Node):
         if (index < 0 or index > self.size):
             return "[ERROR]: invalid index"

@@ -3,7 +3,7 @@
     What if you cannot use additional data structure.
 '''
 
-#Time: O(n) Space: O(n)
+# Time: O(n) Space: O(n)
 
 def uniqueCharacters(str):
     array = set()

@@ -19,7 +19,7 @@ sys.path.insert(0, "/projetos/flask-test")
 
 from Class_SinglyLinked import SinglyLinked
 
-#Time: O(n) Space: O(n)
+# Time: O(n) Space: O(n)
 def DetectionLoop(ptr1):
     mark = set()
     while ptr1 != None:
@@ -29,7 +29,7 @@ def DetectionLoop(ptr1):
         ptr1 = ptr1.next
     return False
     
-#Time: O(n) Space: O(1)
+# Time: O(n) Space: O(1)
 def Floyds_cycle_detection(LinkList: SinglyLinked):
     slow = fast = LinkList.startNode
     Check = False

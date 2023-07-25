@@ -11,7 +11,7 @@
     pale. bake -> false
 '''
 
-#Time: O(n) Space: O(1)
+# Time: O(n) Space: O(1)
 
 def oneAway(str1, str2):
     x = len(str1)

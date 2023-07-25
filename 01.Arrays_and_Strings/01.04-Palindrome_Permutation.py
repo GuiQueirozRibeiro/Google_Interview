@@ -9,7 +9,7 @@
     Output: True (permutations: "tacocat". "atcocta". etc.)
 '''
 
-#Time: O(n) Space: O(1)
+# Time: O(n) Space: O(1)
 
 def Palindrome(str):
     dicio = {}

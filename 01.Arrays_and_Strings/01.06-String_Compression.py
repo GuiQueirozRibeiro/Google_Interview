@@ -5,7 +5,7 @@
     the original string. You can assume the string has only uppercase and lowercase letters (a - z).
 '''
 
-#Time: O(n) Space: O(n)
+# Time: O(n) Space: O(n)
 
 def compress(string):
     compress_string = ""

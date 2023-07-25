@@ -4,7 +4,7 @@
     call to isSubstring (e.g., "waterbottle" is a rotation of"erbottlewat").
 '''
 
-#Time: O(b+s) Space: O(b+s)
+# Time: O(b+s) Space: O(b+s)
 
 def isSubstring(B, S):
     hash = []
