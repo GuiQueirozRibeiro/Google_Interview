@@ -13,10 +13,6 @@
     Output: C
 '''
 
-import sys
-
-sys.path.insert(0, "/projetos/flask-test")
-
 from Class_SinglyLinked import SinglyLinked
 
 # Time: O(n) Space: O(n)

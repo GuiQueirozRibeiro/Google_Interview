@@ -10,7 +10,6 @@
 '''
 
 # Time: O(n) Space: O(1)
-
 def Palindrome(str):
     dicio = {}
     count = 0

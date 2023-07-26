@@ -4,7 +4,6 @@
 '''
 
 # Time: O(n) Space: O(n)
-
 def uniqueCharacters(str):
     array = set()
     for i in str:

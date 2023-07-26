@@ -18,10 +18,6 @@
     Output: 9 -> 1 -> 2. That is, 912.
 '''
 
-import sys
-
-sys.path.insert(0, "/projetos/flask-test")
-
 from Class_SinglyLinked import SinglyLinked
 ListA = SinglyLinked()
 

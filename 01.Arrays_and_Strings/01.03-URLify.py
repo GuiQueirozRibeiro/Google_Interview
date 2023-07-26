@@ -11,7 +11,6 @@
 '''
 
 # Time: O(n) Space: O(1)
-
 def urlify(string, length):
     list_str = list(string)
     x = len(list_str)-1

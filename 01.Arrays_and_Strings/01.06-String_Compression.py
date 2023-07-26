@@ -6,7 +6,6 @@
 '''
 
 # Time: O(n) Space: O(n)
-
 def compress(string):
     compress_string = ""
     letter = ""

@@ -5,12 +5,6 @@
       linked list, then they are intersecting.
 '''
 
-import sys
-
-sys.path.insert(0, "/projetos/flask-test")
-
-from Class_SinglyLinked import SinglyLinked
-
 # Time: O(A+B) Space: O(1)
 def intersection(ListA, ListB):
     ptr1 = ListA.startNode

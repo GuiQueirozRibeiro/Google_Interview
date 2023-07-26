@@ -5,7 +5,6 @@
 '''
 
 # Time: O(b+s) Space: O(b+s)
-
 def isSubstring(B, S):
     hash = []
     b = len(B)

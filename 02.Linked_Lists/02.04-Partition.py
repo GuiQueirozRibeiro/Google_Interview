@@ -10,12 +10,6 @@
     Output: 3 -> 1 -> 2 -> 10 -> 5 -> 5 -> 8
 '''
 
-import sys
-
-sys.path.insert(0, "/projetos/flask-test")
-
-from Class_SinglyLinked import SinglyLinked
-
 # Time: O(n) Space: O(1)
 def partition(linklist, x):
     ptr1 = ptr2 = list.startNode

@@ -2,12 +2,6 @@
 02.06 Palindrome: Implement a function to check if a linked list is a palindrome.
 '''
 
-import sys
-
-sys.path.insert(0, "/projetos/flask-test")
-
-from Class_SinglyLinked import SinglyLinked
-
 # Time: O(n) Space: O(n)
 def Ptr1(ptr1, ptr2):
     i = 0
