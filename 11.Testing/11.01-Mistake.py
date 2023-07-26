@@ -1,7 +1,7 @@
 '''
 11.01 Mistake: Find the mistake(s) in the following code:
 
-      unsigned int i;
-      for (i = 100; i >= 0; --i)
-          printf("%d\n", i);
+    unsigned int i;
+    for (i = 100; i >= 0; --i)
+        printf("%d\n", i);
 '''

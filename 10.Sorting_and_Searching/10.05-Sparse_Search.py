@@ -1,9 +1,9 @@
 '''
 10.05 Sparse Search: Given a sorted array of strings that is interspersed with empty strings, write a
-      method to find the location of a given string.
+    method to find the location of a given string.
 
-      EXAMPLE
+    EXAMPLE
 
-      Input: ball,{"at", "", "" , "" , "ball", "" , "" , "car", "" , "" , "dad", "", ""}
-      Output:4
+    Input: ball,{"at", "", "" , "" , "ball", "" , "" , "car", "" , "" , "dad", "", ""}
+    Output:4
 '''

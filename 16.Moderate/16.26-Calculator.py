@@ -1,9 +1,9 @@
 '''
 16.26 Calculator: Given an arithmetic equation consisting of positive integers, +, -, * and / (no
-      parentheses), compute the result.
+    parentheses), compute the result.
 
-      EXAMPLE
+    EXAMPLE
 
-      Input:    2*3+5/6*3+15
-      Output:   23.5
+    Input:    2*3+5/6*3+15
+    Output:   23.5
 '''

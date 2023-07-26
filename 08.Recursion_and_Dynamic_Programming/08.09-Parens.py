@@ -1,9 +1,9 @@
 '''
 08.09 Parens: Implement an algorithm to print all valid (e.g., properly opened and closed) combinations
-      of n pairs of parentheses.
+    of n pairs of parentheses.
 
-      EXAMPLE
+    EXAMPLE
 
-      Input: 3
-      Output: ((())) , (()()) , (())() , ()(()) , ()()()
+    Input: 3
+    Output: ((())) , (()()) , (())() , ()(()) , ()()()
 '''

@@ -1,9 +1,9 @@
 '''
 17.15 Longest Word: Given a list of words, write a program to find the longest word made of other words
-      in the list.
+    in the list.
 
-      EXAMPLE
+    EXAMPLE
 
-      Input: cat, banana, dog, nana, walk, walker, dogwalker
-      Output: dogwalker
+    Input: cat, banana, dog, nana, walk, walker, dogwalker
+    Output: dogwalker
 '''
