@@ -10,3 +10,12 @@
     Input: N = 10000000000, M = 10011, i = 2, j = 6
     Output: N = 10001001100
 '''
+
+# Time: O(1) Space: O(1)
+def bits_insertion(n, m, i, j):
+    ones_left = -1 << (j + 1)
+    ones_right = (1 << i) - 1
+    mask = ones_left | ones_right
+    cleared = n & mask
+    moved = m << i
+    return cleared | moved

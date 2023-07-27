@@ -7,3 +7,15 @@
 
     drawline(byte[] screen, int width, int x1, int x2, int y)
 '''
+
+# Time: O(x2 - x1) Space: O(1)
+def draw_line(screen: bytearray, width: int, x1: int, x2: int, y: int) -> None:
+    left_byte, right_byte = (y * width + x1) // 8, (y * width + x2) // 8
+    left_mask, right_mask = 0xFF >> x1 % 8, (0xFF >> x2 % 8 + 1) ^ 0xFF
+    if left_byte == right_byte:
+        screen[left_byte] |= left_mask & right_mask
+    else:
+        screen[left_byte] |= left_mask
+        for i in range(left_byte + 1, right_byte):
+            screen[i] = 0xFF
+        screen[right_byte] |= right_mask
