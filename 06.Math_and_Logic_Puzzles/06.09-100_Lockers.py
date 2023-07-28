@@ -5,3 +5,9 @@
     the man toggles every ith locker. After his 100th pass in the hallway, in which he toggles only locker
     #100, how many lockers are open?
 '''
+
+'''
+Answer:
+    To find the number of open lockers after the 100th pass, count the perfect squares between
+    1 and 100. There are 10 open lockers.
+'''
